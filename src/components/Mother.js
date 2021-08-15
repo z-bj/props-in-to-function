@@ -20,7 +20,8 @@ class Mother extends Component {
         <button onClick={this.mothersOrder}>mother's order</button>
         <p>{this.state.messageMother}</p>
         <hr />
-        <Toto />
+        <Toto name="Toto" theState={this.state} />{" "}
+        {/*here we send the Mother's state to toto*/}
       </div>
     );
   }
