@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Toto from "./Toto";
 
 class Mother extends Component {
   state = {
@@ -19,6 +20,7 @@ class Mother extends Component {
         <button onClick={this.mothersOrder}>mother's order</button>
         <p>{this.state.messageMother}</p>
         <hr />
+        <Toto />
       </div>
     );
   }
