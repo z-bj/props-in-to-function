@@ -13,6 +13,12 @@ class Mother extends Component {
     });
   };
 
+  totoAnswers = () => {
+    this.setState({
+      messageToto: "ok mom",
+    });
+  };
+
   render() {
     return (
       <div>
@@ -20,7 +26,11 @@ class Mother extends Component {
         <button onClick={this.mothersOrder}>mother's order</button>
         <p>{this.state.messageMother}</p>
         <hr />
-        <Toto name="Toto" theState={this.state} />{" "}
+        <Toto
+          name="Toto"
+          answerToto={this.totoAnswers}
+          theState={this.state}
+        />{" "}
         {/*here we send the Mother's state to toto*/}
       </div>
     );
